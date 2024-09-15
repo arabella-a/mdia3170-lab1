@@ -1,34 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import groupPhoto from './assets/images/zb1.jpeg';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <section id="section">
+        <header>
+          <nav>
+          <h1>MyTunes</h1>
+          </nav>
+        </header>
+        <main>
+          <img src={groupPhoto} alt="zerobaseone group photo" width={300} height={300}/>
+          <div>
+          <h3>ZEROBASEONE Discography</h3>
+            <table className="table">
+              <details>
+                <summary>YOUTH IN THE SHADE <span>&#43;</span></summary>
+                <p>Back to ZEROBASE</p>
+                <p>In Bloom</p>
+                <p>New Kidz on the Block</p>
+                <p>And I</p>
+                <p>Our Season</p>
+                <p>Always</p>
+              </details>
+            </table>
+            <table className="table">
+              <details>
+                <summary>MELTING POINT <span>&#43;</span></summary>
+                <p>MELTING POINT</p>
+                <p>Take My Hand</p>
+                <p>CRUSH</p>
+                <p>And I</p>
+                <p>Our Season</p>
+                <p>Always</p>
+              </details>
+            </table>
+            <table className="table">
+              <details>
+              <summary>ゆらゆら -運命の花 YURA YURA <span>&#43;</span></summary>
+                <p>ゆらゆら -運命の花 YURA YURA</p>
+                <p>In Bloom - Japanese Ver.</p>
+                <p>Crush - Japanese Ver.</p>
+              </details>
+            </table>
+            <table className="table">
+              <details>
+                <summary>You had me at HELLO <span>&#43;</span></summary>
+                <p>Solar POWER</p>
+                <p>Feel the POP</p>
+                <p>Dear ECLIPSE</p>
+                <p>SWEAT</p>
+                <p>Sunday RIDE</p>
+                <p>HELLO</p>
+                <p>Feel the POP - Sped Up Version</p>
+              </details>
+            </table>
+            <table className="table">
+              <details>
+                <summary>CINEMA PARADISE <span>&#43;</span></summary>
+                <p>GOOD SO BAD</p>
+                <p>KILL THE ROMEO</p>
+                <p>The Sea - ZB1 Remake</p>
+                <p>Insomia</p>
+                <p>Road Movie</p>
+                <p>Eternity</p>
+                <p>YURA YURA - Korean Version</p>
+              </details>
+            </table>
+          </div>
+         </main>
+      </section>
+      <footer>
+        
+      </footer>
+    </div>
   )
 }
 
